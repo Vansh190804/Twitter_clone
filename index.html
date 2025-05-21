@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-black text-white xs:flex justify-center">
+    <div class="container flex flex-row flex-wrap h-screen w-full justify-center">
+        <!-- PANEL1ST -->
+        <div class="panel_first xl:w-1/6 w-1/12 xs:flex flex-col flex-wrap justify-between h-full mr-3 hidden">
+            <div>
+                <button class="hover:bg-custom h-14 w-14 rounded-full flex justify-center items-center ml-1">
+                    <img class="h-8 w-8" src="svg/logo.svg" alt="">
+                </button>
+                <nav class="mt-3 ml-1">
+                    <div class="hover:bg-custom rounded-full w-3/5 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/home.svg" alt="">
+                            <div
+                                class="border w-[6px] h-[6px] rounded-full border-blue-400 bg-blue-400 relative right-2 bottom-0.5">
+                            </div>
+                            <h1 class="font-bold text-xl ml-3 hidden xl:inline">Home</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-3/5 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/search.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">Explore</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-3/4 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/notification.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">Notification</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-4/6 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/message.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">Messages</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-2/4 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/grok.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">Grock</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-5/6 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/community.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">Communities</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-3/5 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/logo.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">Premium</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-3/5 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/profile.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">Profile</h1>
+                        </button>
+                    </div>
+                    <div class="hover:bg-custom rounded-full w-3/5 h-12 flex justify-start items-center">
+                        <button class="flex flex-row ml-3">
+                            <img class="h-7 w-7" src="svg/more.svg" alt="">
+                            <h1 class="text-xl ml-3 hidden xl:inline">More</h1>
+                        </button>
+                    </div>
+                    <div class="mt-2">
+                        <button
+                            class="bg-white text-black xl:font-bold h-12 w-12 xl:h-12 xl:w-11/12 rounded-full text-opacity-0 xl:text-opacity-100">Post
+                            <img class="w-5 xl:hidden relative left-4 bottom-3" src="svg/post.svg" alt="">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <div class="user w-[250px] h-16 hover:bg-custom rounded-full flex items-center justify-start mb-4">
+                <button class="flex flex-row ml-2 w-56 items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-900 flex justify-center items-center text-lg">V</div>
+                        <span class="ml-2 xl:flex flex-col text-sm hidden">
+                            <h1 class="font-bold">Vansh Bajpai</h1>
+                            <p class="text-sm text-grey flex justify-start">@van54082</p>
+                        </span>
+                    </div>
+                    <div class="hidden xl:inline">
+                        <img class="w-5 h-5" src="svg/dot.svg" alt="">
+                    </div>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- MAIN -->
+        <main class="flex flex-row xl:w-4/6 xs:w-5/6 w-full justify-between flex-wrap">
+            <!-- PANEL2ND -->
+            <div class="panel_second lg:w-3/5 border-border border-l border-r h-infinite xs:w-full w-screen">
+
+
+                <!-- HIDDEN CLASS FOR SMALLER DEVICES -->
+                <div class="flex flex-row h-12 justify-between xs:hidden p-3">
+                    <div class="h-8 w-8 rounded-full bg-blue-900 flex justify-center items-center text-md">
+                        <span>V</span>
+                    </div>
+                    <button class="hover:bg-custom h-6 w-6 rounded-full flex justify-center items-center">
+                        <img class="h-6 w-6" src="svg/logo.svg" alt="">
+                    </button>
+                    <button
+                        class="bg-black border border-happen w-1/6 h-6 rounded-full font-bold text-xs text-center">Upgrade
+                    </button>
+                </div>
+
+                <!-- FORYOU -->
+                <div class="flex flex-row xs:h-14 h-14 border-l border-r border-b border-border xs:sticky top-0 bg-black 
+                    bg-opacity-50 backdrop-blur-md w-full z-20">
+                    <button class="w-1/2 hover:bg-shade font-bold ">For you</button>
+                    <button class="w-1/2 hover:bg-shade text-sm text-happen ">Following</button>
+                    <div
+                        class="bg-newblue rounded-full absolute xs:w-16 w-14 h-1 top-[51px] xs:left-[120px] left-[80px]">
+                    </div>
+                </div>
+
+                <!-- POSTPANEL -->
+                <div class="post_panel xs:flex flex-col mt-4 h-28 justify-center border-b-2 border-border hidden">
+                    <div class="m-4">
+                        <div class="flex flex-row justify-center">
+                            <div
+                                class="h-10 w-[44px] rounded-full bg-blue-800 flex justify-center items-center text-lg">
+                                V</div>
+                            <input
+                                class="bg-transparent ml-2 placeholder:text-happen placeholder:text-xl placeholder:text pb-3 w-full h-14 focus:outline-none"
+                                placeholder="What is happening?!" type="text">
+                        </div>
+                        <div class="flex flex-row w-full justify-between items-center">
+                            <div class="ml-12 mt-2">
+                                <button><img class="w-5 h-5 mr-2" src="svg/photo.svg" alt=""></button>
+                                <button><img class="w-5 h-5 mr-2" src="svg/gif.svg" alt=""></button>
+                                <button class="sm:inline hidden"><img class="w-5 h-5 mr-2" src="svg/poll.svg"
+                                        alt=""></button>
+                                <button><img class="w-5 h-5 mr-2" src="svg/emoji.svg" alt=""></button>
+                                <button class="sm:inline hidden"><img class="w-5 h-5 mr-2" src="svg/schedule.svg"
+                                        alt=""></button>
+                                <button><img class="w-5 h-5 mr-2" src="svg/location.svg" alt=""></button>
+                            </div>
+                            <div>
+                                <button class="bg-white text-black font-bold rounded-full w-16 h-8">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SHOWPOSTS -->
+                <div class="border-b border-border h-12 xs:flex hidden justify-center items-center">
+                    <button class="text-newblue text-sm">Show 35 posts</button>
+                </div>
+
+                <div class="x">
+                    <!-- MEDIA1 -->
+                    <div class="flex flex-col border-b border-border w-full">
+
+                        <!-- row1 -->
+                        <div class="flex flex-row justify-between m-4 mb-3">
+                            <div class="flex flex-row">
+                                <img class="w-10 h-10 rounded-full"
+                                    src="https://pbs.twimg.com/profile_images/1858316737780781056/kPL61o0F_400x400.jpg"
+                                    alt="">
+
+                                <div class="flex flex-col ml-2">
+                                    <div class="flex flex-row">
+                                        <span class="font-bold hover:underline xl:text-base text-xs">Elon Musk </span>
+                                        <img class="w-5 ml-1" src="svg/bluetick.svg" alt="">
+                                        <span class="text-happen xs:text-sm text-xs  ml-2">@elonmusk · Dec 11</span>
+                                    </div>
+                                    <div class="flex flex-col text-sm items-start">
+                                        <span>Grok is BasedGPT</span>
+                                        <button class="text-newblue">Show more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="w-8 h-8 rounded-full hover:bg-blue-950 hover:bg-opacity-50 flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    aria-hidden="true" class="w-5 h-5 fill-happen hover:fill-blue-600">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- row2 -->
+                        <div class="border border-border rounded-xl md:w-customWidth w-10/12 ml-14 h-34/5">
+                            <div class="flex flex-row m-3 mb-2">
+                                <img class="w-6 h-6 rounded-full"
+                                    src="https://pbs.twimg.com/profile_images/1853036993674100736/mEwIC82q_400x400.jpg"
+                                    alt="">
+                                <span class="font-bold ml-1">Ashley St. Clair</span>
+                                <img class="w-4 ml-1" src="svg/bluetick.svg" alt="">
+                                <span class="text-happen text ml-2">@stclairashley · Dec 10</span>
+                            </div>
+                            <div class="flex flex-col items-start ml-3 mb-3 text-sm">
+                                <span>You are the media now! @grok</span>
+                                <button class="text-newblue hover:underline">Show more</buttpn>
+                            </div>
+                            <div><img class="rounded-b-xl"
+                                    src="https://pbs.twimg.com/media/GedF5a9XcAALLEy?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+
+                        <!-- row3 -->
+                        <div class="flex flex-row justify-between md:w-customWidth w-10/12 ml-14 mt-3 mb-3">
+                            <div class="flex flex-row ">
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill='gray' viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1 hover:text-newblue">5.5K</span>
+                                </button>
+
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-green-500">
+                                        <g>
+                                            <path
+                                                d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1 hover:text-green-500">6.5K</span>
+                                </button>
+
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-red-500">
+                                        <g>
+                                            <path
+                                                d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1  hover:text-red-500">62K</span>
+                                </button>
+
+                                <button class="flex flex-row items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1  hover:text-newblue">20M</span>
+                                </button>
+
+                            </div>
+
+
+                            <div class="flex flex-row">
+                                <button class="md:mr-1 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button class="items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- MEDIA2 -->
+                    <div class="flex flex-col border-b border-border w-full">
+
+                        <!-- row1 -->
+                        <div class="flex flex-row justify-between m-4 mb-3">
+                            <div class="flex flex-row">
+                                <img class="w-10 h-10 rounded-full"
+                                    src="https://pbs.twimg.com/profile_images/1858316737780781056/kPL61o0F_400x400.jpg"
+                                    alt="">
+
+                                <div class="flex flex-col ml-2">
+                                    <div class="flex flex-row">
+                                        <span class="font-bold hover:underline">Elon Musk </span>
+                                        <img class="w-5 ml-1" src="svg/bluetick.svg" alt="">
+                                        <span class="text-happen text ml-2">@elonmusk · Dec 10</span>
+                                    </div>
+                                    <img alt="😂" draggable="false" src="https://abs-0.twimg.com/emoji/v2/svg/1f602.svg"
+                                        class="w-5">
+                                </div>
+                            </div>
+                            <button
+                                class="w-8 h-8 rounded-full hover:bg-blue-950 hover:bg-opacity-50 flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    aria-hidden="true" class="w-5 h-5 fill-happen hover:fill-blue-600">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- row2 -->
+                        <div class="border border-border rounded-xl md:w-customWidth w-10/12 ml-14 h-34/5">
+                            <div class="flex flex-row m-3 mb-2">
+                                <img class="w-6 h-6"
+                                    src="https://pbs.twimg.com/profile_images/1813087894204260353/cOEDYRn-_400x400.jpg"
+                                    alt="">
+                                <span class="font-bold ml-1">Tesla Owners Silicon Valley</span>
+                                <img class="w-4 ml-1" src="svg/bluetick2.svg" alt="">
+                                <span class="text-happen text ml-2"> @teslaownersSV · Dec 10</span>
+                            </div>
+                            <div class="flex flex-col items-start ml-3 mb-3 text-sm">
+                                <span>Bill Gates driving the Tesla Semi</span>
+                                <button class="text-newblue hover:underline">Show more</buttpn>
+                            </div>
+                            <div><img class="rounded-b-xl"
+                                    src="https://pbs.twimg.com/media/Gea-JZhaIAAFRBf?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+
+                        <!-- row3 -->
+                        <div class="flex flex-row justify-between md:w-customWidth w-10/12 ml-14 mt-3 mb-3">
+                            <div class="flex flex-row ">
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill='gray' viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1 hover:text-newblue">5.5K</span>
+                                </button>
+
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-green-500">
+                                        <g>
+                                            <path
+                                                d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1 hover:text-green-500">6.5K</span>
+                                </button>
+
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-red-500">
+                                        <g>
+                                            <path
+                                                d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1  hover:text-red-500">62K</span>
+                                </button>
+
+                                <button class="flex flex-row items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1  hover:text-newblue">20M</span>
+                                </button>
+
+                            </div>
+
+
+                            <div class="flex flex-row">
+                                <button class="md:mr-1 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button class="items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEDIA3 -->
+                    <div class="flex flex-col border-b border-border w-full">
+                        <!-- row1 -->
+                        <div class="flex flex-row justify-between m-4 mb-3">
+                            <div class="flex flex-row">
+                                <img class="w-10 h-10 rounded-full"
+                                    src="https://pbs.twimg.com/profile_images/1450363341184983042/K3IBOU--_400x400.jpg"
+                                    alt="">
+
+                                <div class="flex flex-col ml-2">
+                                    <div class="flex flex-row">
+                                        <span class="font-bold hover:underline">Times Algebra</span>
+                                        <img class="w-5 ml-1" src="svg/bluetick.svg" alt="">
+                                        <span class="text-happen text ml-2">@TimesAlgebraIND · 12h</span>
+                                    </div>
+                                    <div class="flex flex-col text-sm items-start">
+                                        <span>BIG NEWS 🚨 Amidst Atul Subhash's case, Supreme Court directs a man to pay
+                                            Rs 5 Crore Permanent Alimony to his wife.</span>
+                                        <span class="mt-5">SC also asks him to pay Rs 1 Crore To Engineer Son.</span>
+                                        <span class="mt-5">"Also An amount of Rs. 1 crore towards the maintenance and
+                                            care of the son appears to be fair." ⚡- SUPREME</span>
+                                        <button class="text-newblue">Show more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="w-8 h-8 rounded-full hover:bg-blue-950 hover:bg-opacity-50 flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    aria-hidden="true" class="w-5 h-5 fill-happen hover:fill-blue-600">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- row2 -->
+                        <div class="border border-border rounded-xl md:w-customWidth w-10/12 ml-14 h-5/6">
+                            <div class="flex flex-row">
+                                <img class="rounded-l-xl w-1/2"
+                                    src="https://pbs.twimg.com/media/GekrHGYbkAAkA5F?format=jpg&name=small" alt="">
+                                <img class="rounded-r-xl w-1/2"
+                                    src="https://pbs.twimg.com/media/GekrHLaaEAIXqN2?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+
+                        <!-- row3 -->
+                        <div class="flex flex-row justify-between md:w-customWidth w-10/12 ml-14 mt-3 mb-3">
+                            <div class="flex flex-row ">
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill='gray' viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1 hover:text-newblue">5.5K</span>
+                                </button>
+
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-green-500">
+                                        <g>
+                                            <path
+                                                d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1 hover:text-green-500">6.5K</span>
+                                </button>
+
+                                <button class="flex flex-row md:mr-20 mr-5 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-red-500">
+                                        <g>
+                                            <path
+                                                d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1  hover:text-red-500">62K</span>
+                                </button>
+
+                                <button class="flex flex-row items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-xs text-happen pl-1  hover:text-newblue">20M</span>
+                                </button>
+
+                            </div>
+
+
+                            <div class="flex flex-row">
+                                <button class="mr-1 items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button class="items-center">
+                                    <svg fill="gray" viewBox="0 0 24 24" aria-hidden="true"
+                                        class="w-5 hover:bg-blue-950 hover:bg-opacity-50 rounded-full hover:fill-newblue">
+                                        <g>
+                                            <path
+                                                d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PANEL3RD -->
+            <div class="panel_third w-2/5 lg:flex flex-col items-center h-[1500px] hidden ">
+
+                <!-- SEARCHBAR -->
+                <div class="bg-black h-16 fixed">
+                    <div class="search flex flex-row">
+                        <div class="simg bg-shade rounded-l-full h-14 w-12 flex justify-center items-center">
+                            <img class="w-[18px] h-[18px] ml-2" src="svg/search2.svg" alt="">
+                        </div>
+                        <input
+                            class="w-[300px] h-14 bg-shade rounded-r-full text-sm placeholder:text-left px-2 py-2 flex justify-center focus:bg-black "
+                            placeholder="Search" type="search">
+                    </div>
+                </div>
+
+                <!-- PREMIUM -->
+                <div
+                    class="premium mt-[70px] border-border border rounded-2xl w-[348px] min-h-[150px] flex flex-col justify-center">
+                    <h1 class="flex justify-start text-xl font-black pl-4">Subscribe to Premium</h1>
+                    <span class="text-sm w-9/12 mt-1 pl-4 pt-1">Subscribe to unlock new features and if
+                        eligible, receive a share of revenue.</span>
+                    <div class="w-11/12 pl-4">
+                        <button class="bg-blue-500 w-4/12 h-9 rounded-full mt-2 font-bold text-sm">Subscribe</button>
+                    </div>
+                </div>
+
+                <!-- HAPPEN -->
+                <div class="happen border-border border rounded-2xl w-[348px] h-[420px] flex flex-col mt-4">
+                    <h1 class="font-black p-3 text-xl">What's happening</h1>
+                    <div class="w-[348px] ">
+                        <div class="flex flex-row justify-between p-3">
+                            <button class="flex flex-col items-start">
+                                <span class="text-xs text-happen">Trending in india</span>
+                                <span class="font-black text-sm">#PUSHPA2HitsFastest1000Cr</span>
+                                <span class="text-sm text-happen">452K posts</span>
+                            </button>
+                            <button
+                                class="w-8 h-8 rounded-full hover:bg-blue-950 hover:bg-opacity-50 flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    aria-hidden="true" class="w-5 h-5 fill-happen hover:fill-blue-600">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-row justify-between p-3">
+                            <button class="flex flex-col items-start">
+                                <span class="text-xs text-happen">Trending in india</span>
+                                <span class="font-black text-sm">#Divorce</span>
+                                <span class="text-sm text-happen">7,236 posts</span>
+                            </button>
+                            <button
+                                class="w-8 h-8 rounded-full hover:bg-blue-950 hover:bg-opacity-50 flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    aria-hidden="true" class="w-5 h-5 fill-happen hover:fill-blue-600">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-row justify-between p-3">
+                            <button class="flex flex-col items-start">
+                                <span class="text-xs text-happen">Trending in india</span>
+                                <span class="font-black text-sm">#AnushkaSharma</span>
+                                <span class="text-sm text-happen">2,483 posts</span>
+                            </button>
+                            <button
+                                class="w-8 h-8 rounded-full hover:bg-blue-950 hover:bg-opacity-50 flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    aria-hidden="true" class="w-5 h-5 fill-happen hover:fill-blue-600">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-row justify-between p-3">
+                            <button class="flex flex-col items-start">
+                                <span class="text-xs text-happen">Trending in india</span>
+                                <span class="font-black text-sm">#ManchuManoj</span>
+                                <span class="text-sm text-happen">21.2K posts</span>
+                            </button>
+                            <button
+                                class="w-8 h-8 rounded-full hover:bg-blue-950 hover:bg-opacity-50 flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    aria-hidden="true" class="w-5 h-5 fill-happen hover:fill-blue-600">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="text-blue-400 p-3 text-sm">
+                            Show more
+                        </button>
+                    </div>
+                </div>
+
+                <!-- FOLLOW -->
+                <div class="follow border-border border rounded-2xl w-[348px] h-[290px] flex flex-col mt-4">
+                    <h1 class="font-black p-3 text-xl">Who to follow</h1>
+                    <div class="w-[348px]">
+                        <div class="flex flex-row justify-between p-3">
+                            <button class="flex flex-row">
+                                <img class="w-10 h-10 rounded-sm"
+                                    src="https://yt3.googleusercontent.com/vIq4vVe_C7zq66KKHAtx89KagpDR1CuKkvgi96KtOaVgSTh67G3yJbTUkZ_o_ivUoG4Jxy9QkA=s900-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                                <div class="flex flex-col ml-2">
+                                    <span class="font-bold text-sm flex justify-start">PlayStation</span>
+                                    <span class="text-sm text-happen">@PlayStation</span>
+                                </div>
+                            </button>
+                            <button
+                                class="w-[75px] h-8 bg-white text-black rounded-full flex justify-center items-center font-bold text-sm">
+                                Follow
+                            </button>
+                        </div>
+                        <div class="flex flex-row justify-between p-3">
+                            <button class="flex flex-row">
+                                <img class="w-10 h-10 rounded-sm"
+                                    src="https://pbs.twimg.com/profile_images/1752617697421246464/S8WldaoF_400x400.jpg"
+                                    alt="">
+                                <div class="flex flex-col ml-2">
+                                    <span class="font-bold text-sm flex justify-start">AmiAmi English</span>
+                                    <span class="text-sm text-happen">@AmiAmi_English</span>
+                                </div>
+                            </button>
+                            <button
+                                class="w-[75px] h-8 bg-white text-black rounded-full flex justify-center items-center font-bold text-sm">
+                                Follow
+                            </button>
+                        </div>
+                        <div class="flex flex-row justify-between p-3">
+                            <button class="flex flex-row">
+                                <img class="w-10 h-10 rounded-sm"
+                                    src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://barrettmedia.com/wp-content/uploads/2023/07/SportsCenter.jpg"
+                                    alt="">
+                                <div class="flex flex-col ml-2">
+                                    <span class="font-bold text-sm flex justify-start">SportsCenter</span>
+                                    <span class="text-sm text-happen">@SportsCenter</span>
+                                </div>
+                            </button>
+                            <button
+                                class="w-[75px] h-8 bg-white text-black rounded-full flex justify-center items-center font-bold text-sm">
+                                Follow
+                            </button>
+                        </div>
+                        <button class="text-blue-400 p-3 text-sm">
+                            Show more
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TERMS -->
+                <div class="terms w-[300px] pt-3 text-xs text-happen">
+                    <button class="p-1 hover:underline">Terms of Service</button>
+                    <button class="p-1 hover:underline">Privacy Policy</button>
+                    <button class="p-1 hover:underline">Cookie Policy</button>
+                    <button class="p-1 hover:underline">Accessibility</button>
+                    <button class="p-1 hover:underline">Ads info</button>
+                    <button class="p-1"><span class="hover:underline">More</span>...</button>
+                    <span class="hover:underline">© 2024 X Corp.</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="h-14 bg-black w-screen flex flex-row xs:hidden fixed bottom-0 justify-around">
+        <button class="">
+            <img class="h-7 w-7" src="svg/home.svg" alt="">
+        </button>
+
+
+        <button class="">
+            <img class="h-7 w-7" src="svg/search.svg" alt="">
+        </button>
+
+
+        <button class="">
+            <img class="h-7 w-7" src="svg/grok.svg" alt="">
+
+        </button>
+
+
+
+        <button class="">
+            <img class="h-7 w-7" src="svg/notification.svg" alt="">
+
+        </button>
+
+
+
+
+        <button class="">
+            <img class="h-7 w-7" src="svg/message.svg" alt="">
+
+        </button>
+
+
+
+        <button class="">
+            <img class="h-7 w-7" src="svg/community.svg" alt="">
+
+        </button>
+    </footer>
+</body>
+
+</html>
