@@ -1,0 +1,1 @@
+A fully responsive front-end clone of Twitter (X) built using Tailwind CSS only. This project replicates the look and feel of Twitter’s homepage, including the navigation sidebar, tweet feed layout, trending section, and login/signup prompts — all with utility-first styling.
